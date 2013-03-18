@@ -35,15 +35,15 @@ def compile(view, file_ext, cmd):
 
 class CoffeeScript(sublime_plugin.EventListener):
     def on_post_save(self, view):
-        compile(view, "coffee", "coffee --compile")
+        sublime.set_timeout(lambda: compile(view, "coffee", "coffee --compile"), 0)
 
 class IcedCoffeeScript(sublime_plugin.EventListener):
     def on_post_save(self, view):
-        compile(view, "iced", "iced --compile")
-
+        sublime.set_timeout(lambda: compile(view, "iced", "iced --compile"), 0)
+        
 class TypeScript(sublime_plugin.EventListener):
     def on_post_save(self, view):
-        compile(view, "ts", "tsc")
+        sublime.set_timeout(lambda: compile(view, "ts", "tsc"), 0)
         # folder, filename = os.path.split(view.file_name())
         # name, ext = filename.split('.')
         # target = os.path.join(folder, name + '.js')
