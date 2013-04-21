@@ -5,7 +5,8 @@ import sublime, sublime_plugin
 def compile(view, file_ext, cmd):
     fullname = view.file_name()
     folder, filename = os.path.split(fullname)
-    name, ext = filename.split('.')
+    name   = filename[0:filename.index('.')]
+    ext    = filename.rsplit('.',1)[1]
     target = os.path.join(folder, name + '.js')
     window = view.window()
     
