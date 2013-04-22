@@ -13,18 +13,18 @@ def compile(view, file_ext, cmd):
     if ext != file_ext:
         return
 
-    print '%s detected...' % file_ext
+    print '[codepreview]', '%s detected...' % file_ext
 
     if(window.num_groups() == 1):
-        print 'stop because of single view'
+        print '[codepreview]', 'stop because of single view'
         return
 
     cmd = '{0} "{1}"'.format(cmd, fullname)
-    print cmd
+    print '[codepreview]', cmd
     p = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
     retval = p.wait()
-    print retval
     if retval != 0:
+        print '[codepreview]', 'error occured while compiling the file', fullname
         output = p.stdout.readlines()
         with open(target, 'w') as f:
             f.write(''.join(output))
