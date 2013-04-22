@@ -13,4 +13,8 @@ Here is a screenshot for you to feel how it looks like.
 
 ## Find an issue?
 
-You can file an issue on the [trello board](https://trello.com/b/LzvZl6CR). You can request new features as well. It's all there.
+You can file an issue. Or you can also fix it and do a pull request. I will take care of it, and I appreciate your hard work.
+
+## New features
+
+I will be rolling out new features. But in the meantime, if you find something important is missing, and you want to get your hands dirty. Go ahead and contribute. Again, your awesomeness will be appreciated.
