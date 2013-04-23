@@ -1,7 +1,7 @@
 Sublime Code Preview
 ====================
 
-Preview the compiled code for CoffeeScript, IcedCoffeeScript, TypeScript (keep coming) in sublime text editor.
+Preview the compiled code for CoffeeScript, IcedCoffeeScript, TypeScript, LESS (keep coming) in sublime text editor.
 Get inspired by [Web Essentials](http://vswebessentials.com/), a Visual Studio extension.
 
 ## How it works
