@@ -41,10 +41,14 @@ class CoffeeScript(sublime_plugin.EventListener):
 class IcedCoffeeScript(sublime_plugin.EventListener):
     def on_post_save(self, view):
         sublime.set_timeout(lambda: compile(view, 'iced', 'js', 'iced --compile "{{source}}"'), 0)
-        
+
 class TypeScript(sublime_plugin.EventListener):
     def on_post_save(self, view):
         sublime.set_timeout(lambda: compile(view, 'ts', 'js', 'tsc "{{source}}"'), 0)
+
+class LiveScript(sublime_plugin.EventListener):
+    def on_post_save(self, view):
+        sublime.set_timeout(lambda: compile(view, 'ls', 'js', 'lsc -c "{{source}}"'), 0)
 
 class Less(sublime_plugin.EventListener):
     def on_post_save(self, view):
