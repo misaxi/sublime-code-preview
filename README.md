@@ -1,8 +1,14 @@
 Sublime Code Preview
 ====================
 
-Preview the compiled code for CoffeeScript, IcedCoffeeScript, TypeScript, LESS (keep coming) in sublime text editor.
-Get inspired by [Web Essentials](http://vswebessentials.com/), a Visual Studio extension.
+Preview the compiled code for sublime text editor inspired by [Web Essentials](http://vswebessentials.com/), a Visual Studio extension.
+
+Supported Languages
+- [CoffeeScript](http://coffeescript.org)
+- [IcedCoffeeScript](http://maxtaco.github.io/coffee-script)
+- [LiveScript](http://livescript.net)
+- [TypeScript](http://www.typescriptlang.org)
+- [LESS](http://lesscss.org)
 
 ## How it works
 
@@ -10,6 +16,10 @@ The plugin only works if you turn on multiple views. The compiled code is saved 
 Here is a screenshot for you to feel how it looks like.
 
 ![sublime code preview](http://farm9.staticflickr.com/8374/8567014659_3e76f6b9e1_b.jpg)
+
+## Thanks for the contribution from
+- [Carl Furrow](https://github.com/cfurrow)
+- [Dimitrios Zorbas](https://github.com/Zorbash)
 
 ## Find an issue?
 
